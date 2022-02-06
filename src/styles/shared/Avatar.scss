@@ -1,0 +1,23 @@
+@import '../variable/variables.scss';
+
+.avatar__image{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    border: 2px solid transparent;
+
+    &:hover{
+        cursor: pointer;
+        border: 2px solid $Orange;
+    }
+}
+
+// .avatar__container{
+//     border: 2px solid transparent;
+//     &:hover{
+//         border: 2px solid $Orange;
+//         height: fit-content;
+//         // width:2rem;
+//         border-radius: 50%;
+//     }
+// }

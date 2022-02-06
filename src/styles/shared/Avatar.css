@@ -1,0 +1,12 @@
+.avatar__image {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border: 2px solid transparent;
+}
+
+.avatar__image:hover {
+  cursor: pointer;
+  border: 2px solid #ff7d1a;
+}
+/*# sourceMappingURL=Avatar.css.map */

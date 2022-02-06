@@ -1,0 +1,37 @@
+@import '../variable/variables.scss';
+
+.navigation__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-bottom: 2px solid $Grayish-blue;
+}
+
+.navigation__links-container{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    height: 10vh;
+    align-items: center;
+    
+}
+
+#navigation__cart_avatar{
+    display: flex;
+    flex-direction: row;
+    gap:25px;
+    flex:50%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navigation__logo_links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex:50%;
+}

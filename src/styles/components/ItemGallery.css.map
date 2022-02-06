@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,qCAAqC,CAAA;EACjC,OAAO,EAAE,IAAI;CAChB;;AAED,AAAA,YAAY,CAAA;EACR,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK;EACZ,aAAa,EAAE,EAAE;CACpB;;AAED,AAAA,0BAA0B,CAAA;EACtB,aAAa,EAAE,EAAE;CACpB",
+    "sources": [
+        "ItemGallery.scss"
+    ],
+    "names": [],
+    "file": "ItemGallery.css"
+}

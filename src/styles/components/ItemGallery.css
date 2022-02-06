@@ -1,0 +1,15 @@
+.itemgallery__image_gallery_container {
+  display: -ms-grid;
+  display: grid;
+}
+
+#focus_image {
+  height: 350px;
+  width: 350px;
+  border-radius: 5%;
+}
+
+.itemgallery__other_images {
+  border-radius: 5%;
+}
+/*# sourceMappingURL=ItemGallery.css.map */

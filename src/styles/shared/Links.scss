@@ -1,0 +1,21 @@
+@import '../variable/variables.scss';
+
+.link__text{
+    color: $Dark-grayish-blue;
+    font: $Kumbh;
+    width: fit-content;
+    height: fit-content;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.links__container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
