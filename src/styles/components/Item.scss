@@ -1,0 +1,74 @@
+@import '../variable/variables.scss';
+
+.item__container {
+  flex: 50%;
+  max-height: 100%;
+  max-width: 100%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content:baseline;
+  gap: 5%;
+}
+
+
+// #item__company_name{
+//     justify-self: flex-end;
+// }
+
+#companyName{
+    font-family: $Kumbh;
+    color: $Orange;
+    
+}
+
+#item__Title{
+    font-family: $Kumbh;
+    font-size: 3em;
+}
+
+#item__product_description{
+    font-family: $Kumbh;
+    font-size: 1em;
+    color: $Dark-grayish-blue;
+    text-align: left;
+    width: 75%;
+}
+
+#item__discount_percent{
+    font-size: 1em;
+    font-family: $Kumbh;
+    color: $Orange;
+    background-color: $Pale-orange;
+    display: inline;
+    height: 2em;
+    width: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25%;
+}
+
+#item__discount_price_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    max-height: 100%;
+    margin-bottom: 2%;
+}
+
+#item__discount_price{
+    font-family: $Kumbh;
+    font-weight: 700;
+    font-size: 2em;
+    background-color: $Light-grayish-blue;
+    border-radius: 25%;
+}
+
+#item__full_price{
+    font-family: $Kumbh;
+    color: $Grayish-blue;
+    text-decoration: line-through;
+    font-weight: 700;
+}

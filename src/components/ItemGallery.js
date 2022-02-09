@@ -25,28 +25,69 @@ const thumbnailImages = [
   "../images/image-product-4-thumbnail.jpg",
 ];
 
-
-
 const ItemGallery = (props) => {
   const [productImage, setProductImage] = useState(product1);
 
+  //since images are loaded locally creating individual onclick handler. production would be one handler loading src from table.
+
+  const thumbOneClickHandler=()=>{
+    setProductImage(product1)
+  }
+  const thumbTwoClickHandler=()=>{
+    setProductImage(product2)
+  }
+  const thumbThreeClickHandler=()=>{
+    setProductImage(product3)
+  }
+  const thumbFourClickHandler=()=>{
+    setProductImage(product4)
+  }
+
   return (
-    <div className="itemgallery__image_gallery_container">
-      <FocusImage focus_image={product1} id="focus_image" />
-      {/* {thumbnailImages.map((preImage) => {
+    <div className="itemgallery__app_container">
+      <div className="itemgallery__image_gallery_container">
+        <FocusImage focus_image={productImage} id="focus_image" />
+        {/* {thumbnailImages.map((preImage) => {
         return <ProductPreview id={`previewImage${preImage.indexOf(preImage)}`} preview={preImage}/>;
       })} */}
-      <div id="thumbnail_one_container" >
-        <img id="thumbnail_one" className="itemgallery__other_images" src={product1Thumb} alt="" />
-      </div>
-      <div id="thumbnail_two_container">
-        <img id="thumbnail_two" className="itemgallery__other_images" src={product2Thumb} alt="" />
-      </div>
-      <div id="thumbnail_three_container">
-        <img id="thumbnail_three" className="itemgallery__other_images" src={product3Thumb} alt="" />
-      </div>
-      <div id="thumbnail_four_container">
-        <img id="thumbnail_four" className="itemgallery__other_images" src={product4Thumb} alt="" />
+        <div id="preview_container">
+          <div className="thumbnail_container">
+            <img
+              id="thumbnail_one"
+              className="itemgallery__other_images"
+              src={product1Thumb}
+              alt=""
+              onClick={thumbOneClickHandler}
+            />
+          </div>
+          <div className="thumbnail_container">
+            <img
+              id="thumbnail_two"
+              className="itemgallery__other_images"
+              src={product2Thumb}
+              alt=""
+              onClick={thumbTwoClickHandler}
+            />
+          </div>
+          <div className="thumbnail_container">
+            <img
+              id="thumbnail_three"
+              className="itemgallery__other_images"
+              src={product3Thumb}
+              alt=""
+              onClick={thumbThreeClickHandler}
+            />
+          </div>
+          <div className="thumbnail_container">
+            <img
+              id="thumbnail_four"
+              className="itemgallery__other_images"
+              src={product4Thumb}
+              alt=""
+              onClick={thumbFourClickHandler}
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -1,13 +1,57 @@
+@import '../variable/variables.scss';
+
+img:hover{
+    cursor: pointer;
+}
+
 .itemgallery__image_gallery_container{
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+    height: 100%;
+    width: 100%;
+    
+   
+}
+.itemgallery__app_container{
+    flex: 50%;
+    max-height: 100%;
+    max-width: 100%;
+    padding: 5%;
+    
 }
 
 #focus_image{
-    height: 350px;
-    width: 350px;
-    border-radius: 5%;
+    height: 75%;
+    width: 75%;
+    border-radius: 5%;    
+    border: .2em solid transparent;
+
+    &:hover{
+        border: .2em solid $Orange;
+    }
+}
+
+#preview_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .itemgallery__other_images{
-    border-radius: 5%;
+    border-radius: 7%;
+    width: 90%;
+    height: 90%;
+    border: .2em solid transparent;
+
+    &:hover{
+        border: .2em solid $Orange;
+    }
 }
+
+// #thumbnail_one{
+
+// }
+
