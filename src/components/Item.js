@@ -1,6 +1,7 @@
 import { React, useState } from "react";
 import ProductPreview from "../shared/UIElements/ProductPreview";
 import "../styles/components/Item.css";
+import Quantity from "./Quantity";
 
 const Item = (props) => {
   // const [discountPercentage, setDiscountPercentage]=useState(null)
@@ -30,6 +31,7 @@ const Item = (props) => {
           <span>${props.products.originalPrice}</span>
         </div>
       </div>
+      <Quantity/>
     </div>
   );
 };

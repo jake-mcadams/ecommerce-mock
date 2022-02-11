@@ -62,4 +62,13 @@ img:hover {
 .itemgallery__other_images:hover {
   border: 0.2em solid #ff7d1a;
 }
+
+@media (max-width: 1000px) {
+  #preview_container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 /*# sourceMappingURL=ItemGallery.css.map */

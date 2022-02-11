@@ -38,6 +38,8 @@ img:hover{
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    
+    
 }
 
 .itemgallery__other_images{
@@ -54,4 +56,10 @@ img:hover{
 // #thumbnail_one{
 
 // }
+
+@media (max-width: 1000px) {
+    #preview_container{
+        flex-direction: row;
+    }
+}
 
