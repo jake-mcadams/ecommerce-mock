@@ -11,12 +11,26 @@
     background-color: $Light-grayish-blue;
     border-radius: 10%;
     max-height: 100%;
+    user-select: none;
 }
 
-#quantity__minus_container{
+.quantity__button_container{
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &:hover{
+        cursor: pointer;
+        opacity: 0.5;
+    }
 }
 
-#quantity__plus{
-    align-self: center;
+
+
+#quanity__parent_container{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
+

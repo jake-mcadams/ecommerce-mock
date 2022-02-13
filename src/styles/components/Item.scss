@@ -4,11 +4,12 @@
   flex: 50%;
   max-height: 100%;
   max-width: 100%;
-  padding: 5%;
+//   padding: 10%;
   display: flex;
   flex-direction: column;
   justify-content:baseline;
   gap: 5%;
+  width: min-content;
 }
 
 
@@ -71,4 +72,21 @@
     color: $Grayish-blue;
     text-decoration: line-through;
     font-weight: 700;
+}
+
+#item__cart{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#quantity__message{
+    color: red;
+    background-color: $Light-grayish-blue;
+    width: fit-content;
+    padding: .5em;
+    border-radius: 5%;
+    margin-top: 2%;
 }

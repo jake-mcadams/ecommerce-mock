@@ -4,7 +4,6 @@
           flex: 50%;
   max-height: 100%;
   max-width: 100%;
-  padding: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,6 +15,9 @@
       -ms-flex-pack: baseline;
           justify-content: baseline;
   gap: 5%;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
 }
 
 #companyName {
@@ -85,5 +87,33 @@
   color: #b6bcc8;
   text-decoration: line-through;
   font-weight: 700;
+}
+
+#item__cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#quantity__message {
+  color: red;
+  background-color: #f7f8fd;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: .5em;
+  border-radius: 5%;
+  margin-top: 2%;
 }
 /*# sourceMappingURL=Item.css.map */

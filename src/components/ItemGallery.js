@@ -27,21 +27,30 @@ const thumbnailImages = [
 
 const ItemGallery = (props) => {
   const [productImage, setProductImage] = useState(product1);
+  const [style, setStyle]=useState('');
 
   //since images are loaded locally creating individual onclick handler. production would be one handler loading src from table.
 
   const thumbOneClickHandler=()=>{
     setProductImage(product1)
+    setStyle("activeBorder")
   }
   const thumbTwoClickHandler=()=>{
     setProductImage(product2)
+    setStyle("activeBorder")
   }
   const thumbThreeClickHandler=()=>{
     setProductImage(product3)
+    setStyle("activeBorder")
   }
   const thumbFourClickHandler=()=>{
     setProductImage(product4)
+    setStyle("activeBorder")
   }
+
+  // const borderHandler=()=>{
+  //   setStyle("activeBorder")
+  // }
 
   return (
     <div className="itemgallery__app_container">
